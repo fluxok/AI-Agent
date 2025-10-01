@@ -1,2 +1,2 @@
 # AI-Agent
-This repository is about implmenting AI agent for ETHOS 2025
+This repository is about implementing AI agent for ETHOS 2025
