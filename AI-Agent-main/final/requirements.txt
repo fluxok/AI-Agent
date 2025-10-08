@@ -1,4 +1,0 @@
-﻿langchain-ollama>=0.1.0
-langgraph>=0.0.35
-pandas>=2.0.0
-
