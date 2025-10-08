@@ -59,12 +59,12 @@ class PromptRunner:
     @staticmethod
     def _extract_from_dict(data: Dict[str, Any]) -> Optional[Tuple[Any, Any, Any]]:
         # Map common dict keys into the expected triple layout.
-        key_map = {
-            "answer_option": data.get("answer_option"),
-            "option": data.get("option"),
-            "predicted_option": data.get("predicted_option"),
-        }
-        option_val = next((value for value in key_map.values() if value is not None), None)
+        key_map = (
+            data.get("answer_option"),
+            data.get("option"),
+            data.get("predicted_option"),
+        )
+        option_val = next((value for value in key_map if value is not None), None)
         if option_val is None:
             return None
         reasoning_val = data.get("reasoning") or data.get("reasons") or data.get("explanation")

@@ -68,3 +68,4 @@ final/
 ## Notes
 - The project avoids external network calls inside solver nodes; prompts are intentionally lightweight.
 - Adjust prompts or add new nodes by extending `nodes.py` and re-registering them in `graph.py`.
+- When packaging for a hackathon, include a `requirements.txt` that lists the runtime dependencies shown above.
